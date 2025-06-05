@@ -29,7 +29,7 @@ const OurMission = () => {
               Empowering Your Digital Future
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              At ADRS, our mission is to deliver cutting-edge digital solutions that transform businesses and create lasting value for our clients. We combine technical expertise with innovative thinking to solve complex challenges in today's rapidly evolving digital landscape.
+              At ADRS, our mission is to deliver cutting-edge digital solutions that transform businesses and create lasting value for our clients. We combine technical expertise with innovative thinking to solve complex challenges in today&apos;s rapidly evolving digital landscape.
             </p>
             <div className="h-1 bg-gradient-to-r from-[#3498db] to-[#2c3e50] w-32 mb-8"></div>
           </div>

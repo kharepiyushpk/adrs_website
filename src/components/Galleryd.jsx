@@ -8,8 +8,6 @@ const Gallery = () => {
     <div className="bg-white text-black min-h-screen">
       {/* Hero Section */}
       <div className="w-full h-104 flex flex-col justify-center  items-center bg-cover bg-center bg-[url('src/assets/images/p1.jpg')]">
-        {/* <h1 className="text-4xl font-bold">Gallery</h1>
-        <h6 className="text-lg">Home - Gallery</h6> */}
       </div>
 
       {/* Gallery Container */}
