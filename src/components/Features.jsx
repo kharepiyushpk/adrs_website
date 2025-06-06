@@ -1,4 +1,14 @@
+import { useNavigate } from 'react-router-dom';
+
 const Features = () => {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate('/contact');
+  };
+ const handleGetStartedClick2 = () => {
+    navigate('/career');
+  };
   return (
     <div className="bg-gradient-to-br py-12 px-4 sm:px-6 lg:px-8 breadth">
       <div className="max-w-screen-x1 mx-auto w-full">
@@ -27,25 +37,20 @@ const Features = () => {
                     <p className="text-gray-600 text-sm sm:text-base">Custom solutions for your business needs</p>
                   </div>
                 </div>
-                {/* <div>
-                  <button className="border-2 border-black rounded-md px-4 py-2 text-sm font-semibold hover:bg-black hover:text-white transition-all">
-                    Development
-                  </button>
-                </div> */}
               </div>
 
               <ul className="mt-6 space-y-3 text-gray-700">
                 {[
-                  "Our Charges are Minimum in the industry",
-                  "No Hidden Charges",
-                  "Industry Standard Software Development",
-                  "Project Completed in Deadline",
-                  "Client Friendly Approach",
-                  "Customer Satisfaction",
-                  "Committed to Long-term Relationships",
-                  "No Quality Compromise",
-                  "Flexibility in Payment",
-                  "24/7 Customer Support"
+                  "Client-Centric Approach",
+                  "Full-Stack Development",
+                  "Rapid Prototyping & MVP Development",
+                  "Agile Development Process",
+                  "Secure & Scalable Architecture",
+                  "DevOps & CI/CD Pipelines",
+                  "Automated Testing & QA",
+                  "Experienced Development Team",
+                  "Dedicated Project Management",
+                  "Post-Launch Support & Maintenance"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
                     <svg className="h-5 w-5 text-indigo-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -55,9 +60,12 @@ const Features = () => {
                   </li>
                 ))}
               </ul>
-              
+
               <div className="mt-8">
-                <button className="w-full py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition-all shadow-md hover:shadow-lg">
+                <button
+                  onClick={handleGetStartedClick}
+                  className="w-full py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition-all shadow-md hover:shadow-lg"
+                >
                   Get Started
                 </button>
               </div>
@@ -81,25 +89,20 @@ const Features = () => {
                     <p className="text-gray-600 text-sm sm:text-base">Accelerate your career in tech</p>
                   </div>
                 </div>
-                {/* <div>
-                  <button className="border-2 border-black rounded-md px-4 py-2 text-sm font-semibold hover:bg-black hover:text-white transition-all">
-                    Training
-                  </button>
-                </div> */}
               </div>
 
               <ul className="mt-6 space-y-3 text-gray-700">
                 {[
-                  "Hands-On Experience",
-                  "Mentorship & Training",
-                  "Skill Development",
-                  "Weekly Evaluations & Feedback",
-                  "Real Projects, Real Impact",
-                  "Flexible Duration & Timings",
-                  "Exposure to Industry Tools",
-                  "Certificate of Completion",
-                  "Customized Learning Paths",
-                  "Pre-Placement Offer (PPO) Opportunity"
+                  "Real-World Project Experience",
+                  "Structured Learning Environment",
+                  "Mentorship by Industry Experts",
+                  "Live Coding Sessions & Workshops",
+                  "Hackathons & Challenges",
+                  "Internship in Multiple Domains",
+                  "Client Exposure (Where Applicable)",
+                  "Leadership Opportunities",
+                  "Certification & Recognition",
+                  "Pre-Placement Offer (PPO) for Top Performers"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
                     <svg className="h-5 w-5 text-amber-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -109,9 +112,9 @@ const Features = () => {
                   </li>
                 ))}
               </ul>
-              
+
               <div className="mt-8">
-                <button className="w-full py-3 bg-amber-500 text-white rounded-lg font-semibold hover:bg-amber-600 transition-all shadow-md hover:shadow-lg">
+                <button onClick={handleGetStartedClick2} className="w-full py-3 bg-amber-500 text-white rounded-lg font-semibold hover:bg-amber-600 transition-all shadow-md hover:shadow-lg">
                   Join Program
                 </button>
               </div>

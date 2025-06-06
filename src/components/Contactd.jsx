@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -84,6 +84,12 @@ const ContactPage = () => {
                 </a>
                 <a href="#" className="text-blue-700 hover:text-blue-900">
                   <FaTwitter className="text-2xl" />
+                </a>
+                <a href="#" className="text-blue-700 hover:text-blue-900">
+                  <FaFacebook className="text-2xl" />
+                </a>
+                <a href="#" className="text-blue-700 hover:text-blue-900">
+                  <FaInstagram className="text-2xl" />
                 </a>
               </div>
             </div>

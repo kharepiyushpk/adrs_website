@@ -9,6 +9,9 @@ import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import CareerD from './components/Career';
+import CareerForm from './components/CareerForm';
+
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
   <Route  path="/product" element={<Product />} />
   <Route path="/gallery" element={<Gallery />} />
   <Route path="/contact" element={<Contact />} />
+  <Route path="/career-form" element={<CareerForm />} />
+  <Route path="/career" element={<CareerD />} />
+
  </Routes>
  <Footer/>
  

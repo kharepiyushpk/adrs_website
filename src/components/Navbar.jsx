@@ -35,6 +35,9 @@ const Navbar = () => {
             <Link to="/gallery" className="text-white hover:text-yellow-300 transition duration-200">
               Gallery
             </Link>
+             <Link to="/career" className="text-white hover:text-yellow-300 transition duration-200">
+              Career
+            </Link>
 
             {/* About Us Dropdown */}
             <div className="relative group">
@@ -130,6 +133,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Gallery
+            </Link>
+            <Link
+              to="/career"
+              className="text-white hover:text-yellow-300 px-4 py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Career
             </Link>
 
             {/* Mobile About Dropdown */}
