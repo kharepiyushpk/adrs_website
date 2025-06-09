@@ -7,7 +7,7 @@ const Gallery = () => {
   return (
     <div className="bg-white text-black min-h-screen">
       {/* Hero Section */}
-      <div className="w-full h-104 flex flex-col justify-center  items-center bg-cover bg-center bg-[url('images/p1.jpg')]">
+      <div className="w-full h-104 flex flex-col justify-center  items-center bg-cover bg-center bg-[url('/images/p1.jpg')]">
       </div>
 
       {/* Gallery Container */}
