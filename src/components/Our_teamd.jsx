@@ -3,39 +3,39 @@ const teamData = {
     {
       name: "Abhishek Dubey",
       role: "Founder",
-      image: "../src/assets/images/abhishek.jpg"
+      image: "./images/abhishek.jpg"
     },
     {
       name: "Ritesh Saket",
       role: "Co-Founder",
-      image: "../src/assets/images/ritesh.jpg"
+      image: "./images/ritesh.jpg"
     },
     {
       name: "Piyush Khare",
       role: "Co-Founder",
-      image: "../src/assets/images/piyush2.jpg"
+      image: "./images/piyush2.jpg"
     }
   ],
   technical: [
     {
       name: "Siddhant Dubey",
-      image: "../src/assets/images/Siddhant_jfif.webp"
+      image: "./images/Siddhant_jfif.webp"
     },
     {
       name: "Aman Vishwakarma",
-      image: "../src/assets/images/amann viskarma_jfif.webp"
+      image: "./images/amann viskarma_jfif.webp"
     },
     {
       name: "Aman Singh",
-      image: "../src/assets/images/aman singh_jfif.webp"
+      image: "./images/aman singh_jfif.webp"
     },
     {
       name: "Ishant Patel",
-      image: "../src/assets/images/ishantpic.jpg"
+      image: "./images/ishantpic.jpg"
     },
     {
       name: "Sapeksh Vishwakarma",
-      image: "../src/assets/images/sapekshpic.jpg"
+      image: "./images/sapekshpic.jpg"
     }
   ]
 };
@@ -44,7 +44,7 @@ const OurTeam = () => {
   return (
     <div className="bg-gray-50 text-gray-900">
       {/* Header */}
-      <div className="w-full h-96 bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('../src/assets/images/team_bg.jpg')" }}>
+      <div className="w-full h-96 bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('./images/team_bg.jpg')" }}>
         <div className="bg-black bg-opacity-50 p-8 rounded-lg text-center">
           <h1 className="text-white text-4xl font-bold mb-4 underline">Our Team</h1>
           <p className="text-white text-md leading-relaxed">

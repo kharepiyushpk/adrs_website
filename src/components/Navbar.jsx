@@ -12,7 +12,7 @@ const Navbar = () => {
           {/* Logo with text */}
           <Link to="/" id="logo" className="flex flex-col items-center ml-2">
             <img
-              src="./src/assets/images/logo.png"
+              src="./images/logo.png"
               alt="ADRS Logo"
               className="h-10 w-30 drop-shadow-lg transition-transform duration-300 hover:scale-105"
             />

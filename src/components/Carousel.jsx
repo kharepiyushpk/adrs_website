@@ -9,7 +9,7 @@ const Carousel = () => {
       content: (
         <div
           className="h-full w-full flex items-center justify-center bg-cover bg-center text-center px-4"
-          style={{ backgroundImage: "url('./src/assets/images/carausal1.gif')" }}
+          style={{ backgroundImage: "url('./images/carausal1.gif')" }}
         >
           <h2 className="text-white text-xl sm:text-2xl md:text-3xl font-semibold">
             <span className="block">Welcome To ADRS Technosoft</span>
@@ -20,12 +20,12 @@ const Carousel = () => {
     },
     {
       id: 2,
-      image: "./src/assets/images/carausal2.png",
+      image: "./images/carausal2.png",
       alt: "Carousel Slide 2"
     },
     {
       id: 3,
-      image: "./src/assets/images/carausal30.jpg",
+      image: "./images/carausal30.jpg",
       alt: "Carousel Slide 3"
     },
     {

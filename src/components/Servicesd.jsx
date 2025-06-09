@@ -3,7 +3,7 @@ import { useState } from 'react';
 const services = [
   {
     title: "Web Development",
-    image: "../src/assets/images/webdev.jpg",
+    image: "./images/webdev.jpg",
     alt: "Web Development",
     description: "Comprehensive web solutions tailored to your business needs",
     details: [
@@ -24,7 +24,7 @@ const services = [
   },
   {
     title: "Application Development",
-    image: "../src/assets/images/app_dev.avif",
+    image: "./images/app_dev.avif",
     alt: "Application Development",
     description: "Powerful applications for mobile and desktop platforms",
     details: [
@@ -66,7 +66,7 @@ const services = [
   },
   {
     title: "Digital Marketing",
-    image: "../src/assets/images/digital_marketing.avif",
+    image: "./images/digital_marketing.avif",
     alt: "Digital Marketing",
     description: "Data-driven strategies to grow your online presence",
     details: [
@@ -87,7 +87,7 @@ const services = [
   },
   {
     title: "Logo Design",
-    image: "../src/assets/images/logo_designing.jpg",
+    image: "./images/logo_designing.jpg",
     alt: "Logo Design",
     description: "Memorable brand identities that make an impact",
     details: [
@@ -108,7 +108,7 @@ const services = [
   },
   {
     title: "Graphic Design",
-    image: "../src/assets/images/grapgic.avif",
+    image: "./images/grapgic.avif",
     alt: "Graphic Design",
     description: "Visually stunning designs for all your marketing needs",
     details: [
