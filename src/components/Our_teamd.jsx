@@ -35,7 +35,7 @@ const teamData = {
     },
     {
       name: "Sapeksh Vishwakarma",
-      image: "./images/sapekshpic.jpg"
+      image: "./images/sapekshpic.JPG"
     }
   ]
 };
