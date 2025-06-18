@@ -21,32 +21,55 @@ const roles = [
 
 const Career = () => {
   return (
-    <div className="bg-gradient-to-br from-sky-100 to-blue-900 min-h-screen">
-      <div className="bg-cover bg-center text-white py-24 px-6 text-center" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1603415526960-f7e0328f3654')` }}>
-        <h1 className="text-4xl md:text-5xl font-bold animate-fadeInDown">Life at ADRS Technosoft</h1>
-        <p className="mt-4 text-lg max-w-2xl mx-auto animate-fadeInUp">Where innovation meets collaboration — join a passionate team building next-gen software solutions.</p>
+    <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-blue-100">
+      {/* Hero Section with Background Image */}
+      <div
+        className="bg-cover bg-center text-blue py-32 px-6 text-center relative bg-[url('/images/career-hero.avif')]"
+      >
+        <div className="absolute inset-0 bg-opacity-60"></div>
+        <div className="relative z-10">
+          <h1 className="text-4xl md:text-6xl font-extrabold animate-fadeInDown leading-tight">
+            Discover Your Future at ADRS Technosoft
+          </h1>
+          <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto animate-fadeInUp">
+            Join our team of creators, thinkers, and doers who are passionate about building impactful digital products.
+          </p>
+        </div>
       </div>
 
-      <section className="py-12 px-4 md:px-16 text-center">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-6">Why Join Us?</h2>
-        <ul className="text-gray-600 space-y-3 text-lg">
-          <li>🌟 A creative and inclusive work environment</li>
-          <li>🧠 Opportunities to grow & lead real projects</li>
-          <li>🎯 Flexible work hours & hybrid model</li>
-          <li>🏆 Recognition, rewards, and mentorship</li>
-        </ul>
+      {/* Why Join Us Section */}
+      <section className="py-16 px-4 md:px-20 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10">Why Join Us?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-gray-700 text-lg">
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+            🌟 A creative and inclusive work environment
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+            🧠 Opportunities to grow & lead real projects
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+            🎯 Flexible work hours & hybrid model
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+            🏆 Recognition, rewards, and mentorship
+          </div>
+        </div>
       </section>
 
-      <section className="py-12 px-4 md:px-16 bg-white">
-        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-10">Open Roles</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      {/* Open Roles Section */}
+      <section className="py-16 px-4 md:px-20 bg-gradient-to-r from-white to-sky-50">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">Current Openings</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
           {roles.map((role, index) => (
-            <div key={index} className="bg-white p-6 rounded-2xl shadow-lg w-full max-w-sm hover:shadow-xl transition-transform transform hover:-translate-y-1">
-              <h3 className="text-xl font-bold text-blue-600 mb-2">{role.title}</h3>
-              <p className="text-gray-600 mb-4">{role.description}</p>
+            <div
+              key={index}
+              className="bg-white p-6 rounded-2xl shadow-lg w-full max-w-sm hover:shadow-xl transition-transform transform hover:-translate-y-1"
+            >
+              <h3 className="text-xl font-bold text-blue-700 mb-3">{role.title}</h3>
+              <p className="text-gray-600 mb-6">{role.description}</p>
               <Link
                 to="/career-form"
-                className="inline-block mt-2 bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition"
+                className="inline-block bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition"
               >
                 Apply Now
               </Link>

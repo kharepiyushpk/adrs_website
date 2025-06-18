@@ -1,9 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/About'
 import Services from './pages/Services'
-import Our_Team from './pages/Our_Team'
-import Our_Mission from './pages/Our_Mission'
+import OurTeam from './pages/OurTeam'
+import OurMission from './pages/OurMission'
 import Product  from './pages/Product'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
@@ -11,30 +10,64 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import CareerD from './components/Career';
 import CareerForm from './components/CareerForm';
+import PrivacyPolicy from './policy/PrivacyPolicy'
+import TermsOfService from './policy/TermsOfService'
+import CookiesPolicy from './policy/CookiesPolicy'
+import Workshop from './pages/Workshop'
 
+
+// 🔥 Spark Pages
+import SparkLayout from './spark/SparkLayout';
+import SparkHome from './spark/pages/SparkHome';
+import AllCoursesPage from './spark/pages/AllCoursesPage';
+import CoursePage from './spark/pages/CoursePage';
+import Blog from './spark/pages/Blog';
+import WhyAdrsSpark from './spark/pages/WhyADRSSpark';
+import Registration from './spark/components/Registration';
+import NotFound from './spark/pages/NotFound';
 
 const App = () => {
   return (
- <>
- 
- <Navbar />
- <Routes>
-  <Route path="/" element={<Home />} />
-  <Route path="/about" element={<About />} />   
-  <Route path="/services" element={<Services />} />
-  <Route path="/our-team" element={<Our_Team />} />
-  <Route path="/our-mission" element={<Our_Mission />} />
-  <Route  path="/product" element={<Product />} />
-  <Route path="/gallery" element={<Gallery />} />
-  <Route path="/contact" element={<Contact />} />
-  <Route path="/career-form" element={<CareerForm />} />
-  <Route path="/career" element={<CareerD />} />
+    <Routes>
+      {/* Main Website Routes */}
+      <Route
+        path="/"
+        element={
+          <>
+            <Navbar />
+            <Home />
+            <Footer />
+          </>
+        }
+      />
 
- </Routes>
- <Footer/>
+      <Route path="/services" element={<><Navbar /><Services /><Footer /></>} />
+      <Route path="/our-team" element={<><Navbar /><OurTeam /><Footer /></>} />
+      <Route path="/our-mission" element={<><Navbar /><OurMission /><Footer /></>} />
+      <Route path="/product" element={<><Navbar /><Product /><Footer /></>} />
+      <Route path="/gallery" element={<><Navbar /><Gallery /><Footer /></>} />
+      <Route path="/contact" element={<><Navbar /><Contact /><Footer /></>} />
+      <Route path="/career" element={<><Navbar /><CareerD /><Footer /></>} />
+      <Route path="/career-form" element={<><Navbar /><CareerForm /><Footer /></>} />
+      <Route path="/privacy-policy" element={<><Navbar /><PrivacyPolicy /><Footer /></>} />
+      <Route path="/terms" element={<><Navbar /><TermsOfService /><Footer /></>} />
+      <Route path="/cookies-policy" element={<><Navbar /><CookiesPolicy /><Footer /></>} />
+       <Route path="/workshop" element={<><Navbar /><Workshop /><Footer /></>} />
+
+
+      {/* 🔥 ADRS Spark Routes */}
+      <Route path="/spark" element={<SparkLayout />}>
+        <Route index element={<SparkHome />} />
+        <Route path="/spark/allcourses" element={<AllCoursesPage />} />
+        <Route path="/spark/courses/:id" element={<CoursePage />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="why-adrs-spark" element={<WhyAdrsSpark />} />
+        <Route path="registration" element={<Registration />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
  
- </>
-  )
-}
+ );
+};
 
 export default App

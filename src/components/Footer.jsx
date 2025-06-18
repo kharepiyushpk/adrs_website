@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { 
   FaTwitter, 
   FaGithub, 
@@ -38,11 +40,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition">Home</a></li>
-              <li><a href="#" className="hover:text-white transition">Services</a></li>
-              <li><a href="#" className="hover:text-white transition">Products</a></li>
-              <li><a href="#" className="hover:text-white transition">About us</a></li>
-              <li><a href="#" className="hover:text-white transition">Contact</a></li>
+              <li><a href="/" className="hover:text-white transition">Home</a></li>
+              <li><a href="/services" className="hover:text-white transition">Services</a></li>
+              <li><a href="/product" className="hover:text-white transition">Products</a></li>
+              <li><a href="/career" className="hover:text-white transition">Career</a></li>
+              <li><a href="/contact" className="hover:text-white transition">Contact</a></li>
             </ul>
           </div>
 
@@ -64,10 +66,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contact Us</h4>
             <address className="not-italic text-gray-400 space-y-2">
-              <p> Near Katangi Bypass, Karmeta </p>
-              <p>Jabalpur, MP 482004</p>
-              <p>Email: info@techsolutions.com</p>
-              <p>Phone: (123) 456-7890</p>
+              <p> ADRS Technosoft Office , 71,Dadda Nagar ,Jabalpur, India </p>
+              <p>Jabalpur, MP 482002</p>
+              <p>Email: support@adrstechno.com</p>
+              <p>Phone: (+91) 9201347033</p>
             </address>
           </div>
         </div>
@@ -77,9 +79,11 @@ const Footer = () => {
             © {new Date().getFullYear()} ADRS PVT LTD. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-500 hover:text-white text-sm transition">Privacy Policy</a>
-            <a href="#" className="text-gray-500 hover:text-white text-sm transition">Terms of Service</a>
-            <a href="#" className="text-gray-500 hover:text-white text-sm transition">Cookie Policy</a>
+            <a href="/privacy-policy" className="text-sm hover:underline">Privacy Policy</a>
+
+            <a href="/terms" className="text-sm hover:underline">Terms of Service</a>
+
+            <a href="/cookies-policy" className="text-sm hover:underline">Cookie Policy</a>
           </div>
         </div>
       </div>

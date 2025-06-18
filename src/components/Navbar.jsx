@@ -32,6 +32,9 @@ const Navbar = () => {
             <Link to="/product" className="text-white hover:text-yellow-300 transition duration-200">
               Products
             </Link>
+            <Link to="/workshop" className="text-white hover:text-yellow-300 transition duration-200">
+              Workshop
+            </Link>
             <Link to="/gallery" className="text-white hover:text-yellow-300 transition duration-200">
               Gallery
             </Link>
@@ -81,7 +84,7 @@ const Navbar = () => {
               Contact Us
             </Link>
             <Link
-              to="https://www.raysitworld.com/"
+              to="/spark"
               id="btn"
               className="text-white hover:text-yellow-300 transition duration-200"
             >
@@ -126,6 +129,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Products
+            </Link>
+            <Link
+              to="/workshop"
+              className="text-white hover:text-yellow-300 px-4 py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Workshop
             </Link>
             <Link
               to="/gallery"
@@ -185,7 +195,7 @@ const Navbar = () => {
               Contact Us
             </Link>
             <Link
-              to="https://www.raysitworld.com/"
+              to="/spark"
               className="text-white hover:text-yellow-300 px-4 py-2"
               onClick={() => setIsOpen(false)}
             >

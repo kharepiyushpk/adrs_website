@@ -1,5 +1,13 @@
 import { useState } from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaTwitter,
+  FaFacebook,
+  FaInstagram,
+} from 'react-icons/fa';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -9,10 +17,97 @@ const ContactPage = () => {
     message: ''
   });
 
-  const handleSubmit = (e) => {
+const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [responseMsg, setResponseMsg] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const validate = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    } else if (formData.name.length < 3) {
+      newErrors.name = "Name must be at least 3 characters";
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email";
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone is required";
+    } else if (!/^[0-9]{10,15}$/.test(formData.phone)) {
+      newErrors.phone = "Please enter a valid phone number";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+
+    if (errors[name]) {
+      setErrors(prev => {
+        const newErrors = { ...prev };
+        delete newErrors[name];
+        return newErrors;
+      });
+    }
+  };
+
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Form submission logic here
-    console.log(formData);
+    
+    
+    if (!validate()) return;
+
+    setIsSubmitting(true);
+    setResponseMsg("");
+
+    const form = new FormData();
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("phone", formData.phone);
+    form.append("message", formData.message);
+
+    try {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbx8j3-k_lcsAAzbABDS6NcIfdqeOOTOEhLjn-PPyJ-TmPiTBAtjalOBgHs3QReBudJ1mg/exec", {
+        method: "POST",
+        body: form,
+      });
+
+      const result = await res.json();
+
+      if (result.result === "success") {
+        setIsSuccess(true);
+        setResponseMsg("🎉 Your form has been submitted successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: ""
+        });
+      } else {
+        setIsSuccess(false);
+        setResponseMsg("❌ Error: " + (result.message || "Something went wrong"));
+      }
+    } catch (err) {
+      setIsSuccess(false);
+      setResponseMsg("❌ Failed: " + (err.message || "Network error"));
+    } finally {
+      setIsSubmitting(false);
+    }
+    setIsSuccess(false);
+    setTimeout(() => setResponseMsg(''), 2000);
   };
 
   return (
@@ -47,9 +142,9 @@ const ContactPage = () => {
                 <FaMapMarkerAlt className="text-xl" />
               </div>
               <div>
-                <h3 className="font-semibold text-lg">Corporate Headquarters</h3>
-                <p className="text-gray-600">Near katangi bypass karmeta </p>
-                <p className="text-gray-600">Jabalpur, Madhya Pradesh 482004</p>
+                <h3 className="font-semibold text-lg">ADRS Technosoft</h3>
+                <p className="text-gray-600">71, Dadda Nagar, Jabalpur</p>
+                <p className="text-gray-600">Madhya Pradesh 482002</p>
                 <p className="text-gray-600">India</p>
               </div>
             </div>
@@ -72,25 +167,17 @@ const ContactPage = () => {
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
                 <p className="text-gray-600">support@adrstechno.com</p>
-                <p className="text-gray-600">info@adrstechno.com</p>
+                <p className="text-gray-600">adrstechnosoft@gmail.com</p>
               </div>
             </div>
 
             <div className="pt-4">
               <h3 className="font-semibold text-lg mb-3">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-blue-700 hover:text-blue-900">
-                  <FaLinkedin className="text-2xl" />
-                </a>
-                <a href="#" className="text-blue-700 hover:text-blue-900">
-                  <FaTwitter className="text-2xl" />
-                </a>
-                <a href="#" className="text-blue-700 hover:text-blue-900">
-                  <FaFacebook className="text-2xl" />
-                </a>
-                <a href="#" className="text-blue-700 hover:text-blue-900">
-                  <FaInstagram className="text-2xl" />
-                </a>
+                <a href="#" className="text-blue-700 hover:text-blue-900"><FaLinkedin className="text-2xl" /></a>
+                <a href="#" className="text-blue-700 hover:text-blue-900"><FaTwitter className="text-2xl" /></a>
+                <a href="#" className="text-blue-700 hover:text-blue-900"><FaFacebook className="text-2xl" /></a>
+                <a href="#" className="text-blue-700 hover:text-blue-900"><FaInstagram className="text-2xl" /></a>
               </div>
             </div>
           </div>
@@ -104,10 +191,11 @@ const ContactPage = () => {
               <label className="block text-gray-700 font-medium mb-2">Name *</label>
               <input
                 type="text"
+                name="name"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 required
                 value={formData.name}
-                onChange={(e) => setFormData({...formData, name: e.target.value})}
+                onChange={handleChange}
               />
             </div>
 
@@ -115,40 +203,60 @@ const ContactPage = () => {
               <label className="block text-gray-700 font-medium mb-2">Email *</label>
               <input
                 type="email"
+                name="email"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 required
                 value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
+                onChange={handleChange}
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-2">Phone Number</label>
+              <label className="block text-gray-700 font-medium mb-2">Phone</label>
               <input
                 type="tel"
+                name="phone"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 value={formData.phone}
-                onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                onChange={handleChange}
               />
             </div>
 
             <div>
               <label className="block text-gray-700 font-medium mb-2">Message *</label>
               <textarea
+                name="message"
                 rows="4"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 required
                 value={formData.message}
-                onChange={(e) => setFormData({...formData, message: e.target.value})}
+                onChange={handleChange}
               ></textarea>
             </div>
 
+            <div>
+              {/* Response */}
+            {responseMsg && (
+              <div
+                className={`p-3 rounded-lg text-center font-medium animate-fade-in ${isSuccess
+                    ? "bg-green-100 text-green-800 border border-green-200"
+                    : "bg-red-100 text-red-800 border border-red-200"
+                  }`}
+              >
+                {responseMsg}
+              </div> )}
+            </div> 
+            
+
             <button
               type="submit"
-              className="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-200"
+              disabled={isSubmitting}
+              className="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 ${isSbmitting }"
             >
-              Submit
+              {isSubmitting ? 'Sending...' : 'Submit'}
             </button>
+
+            {status && <p className="text-center text-sm mt-3">{status}</p>}
           </form>
         </div>
       </div>
@@ -158,7 +266,7 @@ const ContactPage = () => {
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <iframe
             title="ADRS Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.265588856372!2d73.91455641522172!3d18.562061287384868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sADRS%20Techno%20City%20Jabalpur!5e0!3m2!1sen!2sin!4v1625553693000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117371.20041529769!2d79.92916776924727!3d23.181467777664804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x3981ae047235df95%3A0xc6821d882e8b1b91!2sAxis%20Bank!5e0!3m2!1sen!2sin!4v1698300432713!5m2!1sen!2sin"
             width="100%"
             height="400"
             style={{ border: 0 }}
