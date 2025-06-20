@@ -6,11 +6,11 @@ const Navbar = () => {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
 
   return (
-    <nav className="bg-[#2c3e50] shadow-lg sticky top-0 z-50">
+    <nav className="bg-[#243642] shadow-lg sticky top-0 z-50">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center ml-4 h-20">
           {/* Logo with text */}
-          <Link to="/" id="logo" className="flex flex-col items-center ml-2">
+          <Link to="/" id="logo" className="flex flex-col items-center ml-2 ">
             <img
               src="./images/logo.png"
               alt="ADRS Logo"

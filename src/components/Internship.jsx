@@ -35,7 +35,7 @@ const Internship = () => {
   ];
 
   return (
-    <div className="py-16 bg-[#b8adad]">
+    <div className="py-16 bg-[#203b45]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-white mb-12">ADRS SPARK INTERNSHIP PROGRAM</h2>
         
@@ -43,7 +43,7 @@ const Internship = () => {
           {internships.map((internship) => (
             <Link 
               key={internship.id} 
-              to="/register"
+              to="/spark/registration"
               className="bg-[#243642] border border-white rounded-lg p-4 flex flex-col items-center hover:transform hover:-translate-y-2 transition-transform duration-300"
             >
               <div className="w-full h-32 mb-4">

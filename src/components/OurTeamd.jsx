@@ -19,22 +19,17 @@ const teamData = {
   technical: [
     {
       name: "Siddhant Dubey",
+      role: "Technical Lead",
       image: "./images/team/Siddhant_jfif.webp"
     },
     {
-      name: "Aman Vishwakarma",
-      image: "./images/team/amann viskarma_jfif.webp"
-    },
-    {
-      name: "Aman Singh",
-      image: "./images/team/aman singh_jfif.webp"
-    },
-    {
       name: "Ishant Patel",
+      role: "Backend Developer",
       image: "./images/team/ishantpic.jpg"
     },
     {
       name: "Sapeksh Vishwakarma",
+      role: "Frontend Developer",
       image: "./images/team/sapekshpic.JPG"
     }
   ]
@@ -46,7 +41,7 @@ const OurTeam = () => {
       {/* Hero Section */}
       <div
         className="w-full h-96 bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/images/team-hero.webp')" }}
+        style={{ backgroundImage: "url('/images/team/hero-team.avif')" }}
       >
         <div className="bg-black bg-opacity-60 p-8 rounded-lg text-center">
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Meet Our Dynamic Team</h1>
@@ -92,6 +87,7 @@ const OurTeam = () => {
                 className="w-full h-64 object-cover rounded-lg shadow-md mb-4"
               />
               <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
+              <p className="text-blue-600 font-medium">{member.role}</p>
             </div>
           ))}
         </div>

@@ -2,20 +2,18 @@
 import { useEffect, useRef } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { coursesDropdown } from "../data/CoursesDropdown";
-import {
-  partnersDropdown
-} from "../data/OtherDropdowns";
+import { partnersDropdown } from "../data/OtherDropdowns";
 import { Link } from "react-router-dom";
 
 const getWidthClass = (type) => {
   switch (type) {
     case "courses":
-      return "w-[90vw] max-w-5xl"; // responsive, avoids overflow
+      return "w-[90vw] max-w-5xl";
     case "why":
     case "partners":
-      return "w-[85vw] max-w-md"; // compact
+      return "w-[85vw] max-w-md";
     default:
-      return "w-[90vw]"; // fallback
+      return "w-[90vw]";
   }
 };
 
@@ -35,7 +33,6 @@ const DropdownMenu = ({ type }) => {
   }, []);
 
   let data;
-
   switch (type) {
     case "courses":
       data = coursesDropdown;
@@ -53,7 +50,8 @@ const DropdownMenu = ({ type }) => {
       className={`absolute top-12 left-0 bg-white shadow-xl p-6 rounded-lg 
         ${getWidthClass(type)} z-50 border border-gray-100 animate-fadeIn`}
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      {/* Scrollable Grid Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-h-[60vh] overflow-y-auto pr-2">
         {Object.entries(data).map(([section, items]) => (
           <div key={section} className="group">
             <h3 className="font-bold text-lg mb-3 text-gray-800 group-hover:text-green-600 transition-colors duration-200">
@@ -61,7 +59,6 @@ const DropdownMenu = ({ type }) => {
             </h3>
             <div className="space-y-3">
               {items.map((item, idx) => (
-
                 <Link
                   key={idx}
                   to={`/spark/courses/${item.id}`}
@@ -87,6 +84,7 @@ const DropdownMenu = ({ type }) => {
         ))}
       </div>
 
+      {/* Footer link for courses */}
       {type === "courses" && (
         <div className="mt-6 pt-6 border-t border-gray-100">
           <Link

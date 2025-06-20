@@ -1,12 +1,12 @@
-"use client"
-
 import { useState } from "react"
+import { ChevronDown, ChevronUp } from "lucide-react"
 import { coursesFlat } from "../data/CoursesFlat"
 import { Link } from "react-router-dom"
 import { FiExternalLink } from "react-icons/fi"
 
 const HeroSection = () => {
   const [showMoreCourses, setShowMoreCourses] = useState(false)
+
 
   return (
     <div className="w-full">
@@ -19,17 +19,28 @@ const HeroSection = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Transform Your Career with ADRS Spark</h1>
               <p className="text-xl mb-8">Industry-leading training programs to accelerate your professional growth</p>
               <Link to="/spark/allcourses">
-                <button className="bg-white text-[#4A705A] px-8 py-3 rounded-lg font-semibold hover:bg-[#f0f9ea] transition duration-300">
-                  Explore Programs
-                </button>
+              <button className="bg-white text-[#4A705A] px-8 py-3 rounded-lg font-semibold hover:bg-[#f0f9ea] transition duration-300">
+                Explore Programs
+              </button>
               </Link>
             </div>
-
             <div className="md:w-1/2 grid grid-cols-2 gap-4">
-              <img src="./images/spark-images/training1.jpg" alt="Training Session" className="rounded-lg shadow-lg" />
-              <img src="./images/spark-images/training2.jpg" alt="Workshop" className="rounded-lg shadow-lg mt-10" />
-              <img src="./images/spark-images/training3.jpg" alt="Certification" className="rounded-lg shadow-lg" />
-              <img src="./images/spark-images/training4.jpg" alt="Online Learning" className="rounded-lg shadow-lg mt-10" />
+              <img src="./images/spark-images/training1.jpg"
+                alt="Training Session"
+                className="rounded-lg shadow-lg"
+              />
+              <img src="./images/spark-images/training2.jpg"
+                alt="Workshop"
+                className="rounded-lg shadow-lg mt-10"
+              />
+              <img src="./images/spark-images/training3.jpg"
+                alt="Certification"
+                className="rounded-lg shadow-lg"
+              />
+              <img src="./images/spark-images/training4.jpg"
+                alt="Online Learning"
+                className="rounded-lg shadow-lg mt-10"
+              />
             </div>
           </div>
         </div>
@@ -56,7 +67,9 @@ const HeroSection = () => {
                   <p className="text-gray-600 mb-4">{course.description}</p>
                   <div className="flex justify-between items-center">
                     <span className="text-[#4A705A] font-semibold">{course.duration}</span>
-                    <Link to={`/courses/${course.id}`}>
+                    <Link
+                      key={course}
+                      to={`/spark/courses/${course.id}`}>
                       <button className="text-sm bg-[#B2CD9C] text-[#1B3B2F] px-3 py-1 rounded-full hover:bg-[#A0C49D] transition duration-300">
                         Learn More
                       </button>
@@ -67,7 +80,7 @@ const HeroSection = () => {
             ))}
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center" >
             <Link
               to="/spark/allcourses"
               className="inline-flex items-center justify-center mt-12 px-6 py-3 rounded-lg font-semibold bg-green-600 text-white hover:bg-green-700 transition-all duration-300 shadow-md hover:shadow-lg"
@@ -76,9 +89,10 @@ const HeroSection = () => {
               <FiExternalLink className="ml-2 w-5 h-5" />
             </Link>
           </div>
+
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

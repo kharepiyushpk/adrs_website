@@ -7,7 +7,7 @@ const Features = () => {
     navigate('/contact');
   };
  const handleGetStartedClick2 = () => {
-    navigate('/career');
+    navigate('/spark/registration');
   };
   return (
     <div className="bg-gradient-to-br py-12 px-4 sm:px-6 lg:px-8 breadth">

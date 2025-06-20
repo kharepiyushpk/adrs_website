@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Search, Filter, Clock, Users, Award, Star, ChevronDown, X, BookOpen, TrendingUp, Play, Share2 } from 'lucide-react';
+import { Search, Filter, Clock, Users, Award, Star, ChevronDown, X, BookOpen, Share2 } from 'lucide-react';
 import { coursesFlat } from '../data/CoursesFlat';
 import { Link } from 'react-router-dom';
 

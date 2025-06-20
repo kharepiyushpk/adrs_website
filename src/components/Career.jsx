@@ -24,7 +24,7 @@ const Career = () => {
     <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-blue-100">
       {/* Hero Section with Background Image */}
       <div
-        className="bg-cover bg-center text-blue py-32 px-6 text-center relative bg-[url('/images/career-hero.avif')]"
+        className="bg-cover bg-center text-white py-32 px-6 text-center relative bg-[url('/images/cara101.avif')]"
       >
         <div className="absolute inset-0 bg-opacity-60"></div>
         <div className="relative z-10">

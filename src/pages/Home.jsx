@@ -5,13 +5,12 @@ import Servicesd from '../components/Servicesd';
 
 const Home = () => {
   return (
-    <div className="bg-[#243642] text-white">
+    <div className="bg-[#203b45] text-white">
       <Carousel />
       
        <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-1 gap-8">
           <Features />
-          {/* <Skills /> */}
         </div>
       </div>
       

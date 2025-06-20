@@ -9,7 +9,7 @@ const OurMission = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative text-white py-32 bg-cover bg-center"style={{ backgroundImage: "url('/images/mission-hero.avif')" }}>
+      <div className="relative text-white py-32 bg-cover bg-center"style={{ backgroundImage: "url('/images/team/hero-team.avif')" }}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fadeIn">
             Our Mission

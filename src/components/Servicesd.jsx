@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -66,7 +67,7 @@ const services = [
   },
   {
     title: "Digital Marketing",
-    image: "./images/digital_marketing.avif",
+    image: "./images/carausal30.jpg",
     alt: "Digital Marketing",
     description: "Data-driven strategies to grow your online presence",
     details: [
@@ -108,7 +109,7 @@ const services = [
   },
   {
     title: "Graphic Design",
-    image: "./images/grapgic.avif",
+    image: "./images/graphic.avif",
     alt: "Graphic Design",
     description: "Visually stunning designs for all your marketing needs",
     details: [
@@ -144,9 +145,9 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen py-10 px-4">
+    <div className="bg-[#203b45] min-h-screen py-10 px-4">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800 mb-2">Our Services</h1>
+        <h1 className="text-4xl font-bold text-gray-800 mb-2 text-white">Our Services</h1>
       </div>
 
       <div className="max-w-7xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -228,13 +229,11 @@ const Services = () => {
                     </div>
                   </div>
 
-                  <div className="mt-8 flex flex-wrap gap-4">
+                  <div className="mt-8 flex flex-wrap gap-">
+                    <Link to="/contact">
                     <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors">
-                      Get a Quote
-                    </button>
-                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition-colors">
                       Contact Us
-                    </button>
+                    </button> </Link>
                   </div>
                 </div>
               </div>

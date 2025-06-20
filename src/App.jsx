@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import "aos/dist/aos.css";
 import Home from './pages/Home'
 import Services from './pages/Services'
 import OurTeam from './pages/OurTeam'
@@ -25,6 +26,7 @@ import Blog from './spark/pages/Blog';
 import WhyAdrsSpark from './spark/pages/WhyADRSSpark';
 import Registration from './spark/components/Registration';
 import NotFound from './spark/pages/NotFound';
+
 
 const App = () => {
   return (
@@ -66,6 +68,8 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
+
+
  
  );
 };

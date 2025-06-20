@@ -113,7 +113,7 @@ const [errors, setErrors] = useState({});
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-blue-800 text-white py-12 px-4">
+      <div className="bg-[#203b45] text-white py-12 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Contact ADRS Solutions</h1>
           <p className="text-xl max-w-2xl mx-auto">

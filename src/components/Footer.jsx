@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import { 
   FaTwitter, 
   FaGithub, 
@@ -52,11 +50,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Services</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition">Web Development</a></li>
-              <li><a href="#" className="hover:text-white transition">Mobile App Development</a></li>
-              <li><a href="#" className="hover:text-white transition">Software Development</a></li>
-              <li><a href="#" className="hover:text-white transition">Digital Marketing</a></li>
-              <li><a href="#" className="hover:text-white transition">Graphic Designing</a></li>
+              <li><a href="/services" className="hover:text-white transition">Web Development</a></li>
+              <li><a href="/services" className="hover:text-white transition">Mobile App Development</a></li>
+              <li><a href="/services" className="hover:text-white transition">Software Development</a></li>
+              <li><a href="/services" className="hover:text-white transition">Digital Marketing</a></li>
+              <li><a href="/services" className="hover:text-white transition">Graphic Designing</a></li>
               
              
             </ul>

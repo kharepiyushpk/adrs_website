@@ -7,7 +7,7 @@ const Gallery = () => {
   return (
     <div className="bg-white text-black min-h-screen">
       {/* Hero Section */}
-      <div className="w-full h-104 flex flex-col justify-center  items-center bg-cover bg-center bg-[url('/images/p1.jpg')]">
+      <div className="w-full h-104 flex flex-col justify-center  items-center bg-cover bg-center bg-[url('/images/gallery/p1.jpg')]">
       </div>
 
       {/* Gallery Container */}
@@ -17,7 +17,7 @@ const Gallery = () => {
           {images.map((img, idx) => (
             <div key={idx}>
               <img
-                src={`images/${img}`}
+                src={`images/gallery/${img}`}
                 alt={`Image ${idx + 1}`}
                 className="w-full h-48 object-cover rounded-lg shadow-md"
               />

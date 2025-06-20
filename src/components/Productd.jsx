@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const products = [
   {
@@ -124,9 +125,10 @@ const Product = () => {
                       </svg>
                       Watch Demo
                     </button>
+                    <Link to="/contact">
                     <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition-colors">
                       Request Quote
-                    </button>
+                    </button> </Link>
                   </div>
                 </div>
               </div>

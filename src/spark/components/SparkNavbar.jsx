@@ -22,11 +22,6 @@ const navItems = [
     icon: <HiOutlineBookOpen className="mr-1" />,
   },
   {
-    label: "For Partners",
-    key: "partners",
-    icon: <HiOutlineUsers className="mr-1" />,
-  },
-  {
     label: "Why ADRS Spark",
     key: "why",
     icon: <HiOutlineLightBulb className="mr-1" />,
