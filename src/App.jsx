@@ -23,7 +23,7 @@ import SparkHome from './spark/pages/SparkHome';
 import AllCoursesPage from './spark/pages/AllCoursesPage';
 import CoursePage from './spark/pages/CoursePage';
 import Blog from './spark/pages/Blog';
-import WhyAdrsSpark from '../spark/pages/WhyAdrsSpark';
+import WhyAdrsSpark from './spark/pages/WhyAdrsSpark';
 import Registration from './spark/components/Registration';
 import NotFound from './spark/pages/NotFound';
 
