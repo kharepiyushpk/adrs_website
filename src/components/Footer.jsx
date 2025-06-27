@@ -1,5 +1,5 @@
 import { 
-  FaTwitter, 
+  FaInstagram, 
   FaGithub, 
   FaLinkedin, 
   FaFacebook, 
@@ -19,16 +19,16 @@ const Footer = () => {
               Innovating the future with cutting-edge technology solutions for your business.
             </p>
              <div className="flex space-x-4 icon_width">
-              <a href="https://www.linkedin.com/company/adrs-technology/" className="text-gray-400 hover:text-white transition" aria-label="Twitter">
-                <FaTwitter className="w-5 h-6" />
+              <a href="https://www.instagram.com/adrstechno?igsh=MWhjOGdvdXpzOXBwYg==" className="text-gray-400 hover:text-white transition" aria-label="Instagram">
+                <FaInstagram className="w-5 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="GitHub">
+              <a href="https://github.com/adrstechno" className="text-gray-400 hover:text-white transition" aria-label="GitHub">
                 <FaGithub className="w-5 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/adrs-technology/" className="text-gray-400 hover:text-white transition" aria-label="LinkedIn">
                 <FaLinkedin className="w-5 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition" aria-label="Facebook">
+              <a href="https://www.instagram.com/adrstechno?igsh=MWhjOGdvdXpzOXBwYg==" className="text-gray-400 hover:text-white transition" aria-label="Facebook">
                 <FaFacebook className="w-5 h-6" />
               </a>
             </div>
