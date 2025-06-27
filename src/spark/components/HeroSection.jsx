@@ -57,11 +57,12 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {coursesFlat.map((course) => (
+            <Link key={course} to={`/spark/courses/${course.id}`}>
               <div key={course.id} className="bg-white mx-4 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
                 <img src={course.image} alt={course.name} className="w-full h-64 object-center" />
-
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-[#1B3B2F]">{course.name}</h3>
                   <p className="text-gray-600 mb-4">{course.description}</p>
@@ -76,7 +77,7 @@ const HeroSection = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> </Link>
             ))}
           </div>
 

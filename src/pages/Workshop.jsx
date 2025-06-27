@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import CountUp from "react-countup";
 import {
   FaChalkboardTeacher,
   FaTools,
@@ -172,21 +171,6 @@ const Workshop = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-gray-100 text-center">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {[{ end: 50, label: "Institutions" }, { end: 1000, label: "Students Trained" }, { end: 20, label: "Technologies Covered" }].map((item, i) => (
-            <div key={i} className="bg-white rounded-xl p-6 shadow-md" data-aos="zoom-in">
-              <h3 className="text-3xl font-bold text-indigo-700">
-                <CountUp end={item.end} duration={3} />+
-              </h3>
-              <p className="mt-2 text-gray-600">{item.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* CTA */}
       <section className="text-center py-20 bg-[#203B45] text-white">
         <h3 className="text-3xl md:text-4xl font-bold mb-4 animate-bounce">
           Let’s Spark Innovation Together!

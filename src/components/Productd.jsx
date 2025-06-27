@@ -44,11 +44,6 @@ const Product = () => {
     setShowDetail(true);
   };
 
-  const handleDemoClick = () => {
-    setSelectedVideo(selectedProduct.videoUrl);
-    setShowDetail(false);
-  };
-
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
       <h2 className="text-3xl font-bold text-center text-green-700 mb-10">Our Smart Products</h2>
@@ -116,18 +111,10 @@ const Product = () => {
                   </ul>
                   
                   <div className="flex flex-wrap gap-4">
-                    <button
-                      onClick={handleDemoClick}
-                      className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors flex items-center"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                      </svg>
-                      Watch Demo
-                    </button>
+                  
                     <Link to="/contact">
-                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition-colors">
-                      Request Quote
+                    <button className="bg-blue-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition-colors">
+                      Contact For Demo
                     </button> </Link>
                   </div>
                 </div>

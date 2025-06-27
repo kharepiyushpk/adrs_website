@@ -29,7 +29,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "4999"
+    price: "4999",
+    videoUrl: "/images/spark-images/course-videos/fullstack-video.mp4"
   },
   {
     id: "javascript",
@@ -56,7 +57,8 @@ export const coursesFlat = [
       "Local Storage & JSON"
     ], rating: 4.8,
     students: 1250,
-    price: "2999"
+    price: "2999",
+    videoUrl: "/images/spark-images/course-videos/javascript-video.mp4"
   },
   {
     id: "frontend",
@@ -82,7 +84,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "599"
+    price: "599",
+    videoUrl: "/images/spark-images/course-videos/html-video.mp4"
   },
 
   {
@@ -111,7 +114,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/react-video.mp4"
   },
 
    {
@@ -140,7 +144,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/angular-video.mp4"
   },
 
   //programming languages
@@ -171,7 +176,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "1999"
+    price: "1999",
+    videoUrl: "/images/spark-images/course-videos/java-video.mp4"
   },
 
   {
@@ -200,7 +206,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "1999"
+    price: "1999",
+    videoUrl: "/images/spark-images/course-videos/video-cpp.mp4"
   },
 
   {
@@ -229,7 +236,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "1999"
+    price: "1999",
+    videoUrl: "/images/spark-images/course-videos/javascript-video.mp4"
   },
 
   {
@@ -258,7 +266,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "1999"
+    price: "1999",
+    videoUrl: "/images/spark-images/course-videos/python-video.mp4"
   },
 
   {
@@ -285,7 +294,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/sql-video.mp4"
   },
 
   // database courses
@@ -313,7 +323,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/mysql-video.mp4"
   },
 
   {
@@ -340,7 +351,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "111999",
+    videoUrl: "/images/spark-images/course-videos/mongo-video.mp4"
   },
 
   {
@@ -367,7 +379,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/postgre-video.mp4"
   },
 
   {
@@ -394,7 +407,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/oracle-video.mp4"
   },
 
   {
@@ -421,7 +435,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/plsql-video.mp4"
   },
 
   //mobile app development
@@ -449,7 +464,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/native-video.mp4"
   },
 
   {
@@ -476,7 +492,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/flutter-video.mp4"
   },
 
   {
@@ -503,7 +520,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/android-kotlin-video.mp4"
   },
 
   {
@@ -530,7 +548,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "1999",
+    videoUrl: "/images/spark-images/course-videos/android-java-video.mp4"
   },
 
   {
@@ -557,7 +576,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/ios-video.mp4"
   },
 
   //software testing 
@@ -587,7 +607,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/selenium-video.mp4"
   },
 
   {
@@ -614,7 +635,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/automation-video.mp4"
   },
 
   {
@@ -641,7 +663,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/tesing-video.mp4"
   },
 
   {
@@ -668,7 +691,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/postman-video.mp4"
   },
 
   //devops courses
@@ -697,7 +721,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/devops-video.mp4"
   },
 
   {
@@ -724,7 +749,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/docker-video.mp4",
   },
 
   {
@@ -750,7 +776,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/fundamentals-video.mp4"
   },
 
   {
@@ -777,7 +804,8 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999"
+    price: "999",
+    videoUrl: "/images/spark-images/course-videos/kubernetes-video.mp4"
   },
 
   

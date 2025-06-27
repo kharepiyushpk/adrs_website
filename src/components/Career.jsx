@@ -68,7 +68,7 @@ const Career = () => {
               <h3 className="text-xl font-bold text-blue-700 mb-3">{role.title}</h3>
               <p className="text-gray-600 mb-6">{role.description}</p>
               <Link
-                to="/career-form"
+                to="/spark/registration"
                 className="inline-block bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition"
               >
                 Apply Now

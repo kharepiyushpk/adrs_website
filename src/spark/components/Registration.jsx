@@ -2,12 +2,11 @@ import { useState } from "react";
 
 const RegisterForm = () => {
   const domainOptions = [
-    "Web Development",
-    "Mobile App Development",
+    "Frontend Development",
+    "Backend Development",
+    "Full Stack Development",
     "UI/UX Design",
     "Digital Marketing",
-    "SEO Services",
-    "Content Writing",
     "Graphic Design",
     "Other"
   ];

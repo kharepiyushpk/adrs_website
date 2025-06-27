@@ -92,11 +92,11 @@ const OurMission = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="p-6">
-              <div className="text-5xl font-bold mb-2">200+</div>
+              <div className="text-5xl font-bold mb-2">15+</div>
               <div className="text-xl">Satisfied Clients</div>
             </div>
             <div className="p-6">
-              <div className="text-5xl font-bold mb-2">15+</div>
+              <div className="text-5xl font-bold mb-2">1+</div>
               <div className="text-xl">Years of Experience</div>
             </div>
             <div className="p-6">

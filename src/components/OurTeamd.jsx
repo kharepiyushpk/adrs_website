@@ -3,7 +3,7 @@ const teamData = {
     {
       name: "Abhishek Dubey",
       role: "Founder",
-      image: "./images/team/abhishek.jpg"
+      image: "./images/team/Abhishek.jpeg"
     },
     {
       name: "Ritesh Saket",
@@ -58,7 +58,7 @@ const OurTeam = () => {
           {teamData.founders.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-transform transform hover:-translate-y-1 p-4"
+              className="bg-white rounded-2xl shadow-lg overflow-cover hover:shadow-xl transition-transform transform hover:-translate-y-1 p-4"
             >
               <img
                 src={member.image}

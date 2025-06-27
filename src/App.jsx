@@ -10,11 +10,11 @@ import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import CareerD from './components/Career';
-import CareerForm from './components/CareerForm';
 import PrivacyPolicy from './policy/PrivacyPolicy'
 import TermsOfService from './policy/TermsOfService'
 import CookiesPolicy from './policy/CookiesPolicy'
 import Workshop from './pages/Workshop'
+import ScrollToTop from './components/ScrollToTop';
 
 
 // 🔥 Spark Pages
@@ -30,6 +30,9 @@ import NotFound from './spark/pages/NotFound';
 
 const App = () => {
   return (
+
+    <>
+    <ScrollToTop></ScrollToTop>
     <Routes>
       {/* Main Website Routes */}
       <Route
@@ -50,7 +53,6 @@ const App = () => {
       <Route path="/gallery" element={<><Navbar /><Gallery /><Footer /></>} />
       <Route path="/contact" element={<><Navbar /><Contact /><Footer /></>} />
       <Route path="/career" element={<><Navbar /><CareerD /><Footer /></>} />
-      <Route path="/career-form" element={<><Navbar /><CareerForm /><Footer /></>} />
       <Route path="/privacy-policy" element={<><Navbar /><PrivacyPolicy /><Footer /></>} />
       <Route path="/terms" element={<><Navbar /><TermsOfService /><Footer /></>} />
       <Route path="/cookies-policy" element={<><Navbar /><CookiesPolicy /><Footer /></>} />
@@ -69,7 +71,7 @@ const App = () => {
       </Route>
     </Routes>
 
-
+</>
  
  );
 };

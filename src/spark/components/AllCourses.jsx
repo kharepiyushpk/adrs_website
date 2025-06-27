@@ -66,11 +66,13 @@ const AllCourses = () => {
     <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
       {/* Image & badges */}
       <div className="relative overflow-hidden">
+        <Link key={course}
+              to={`/spark/courses/${course.id}`}>
         <img
           src={course.image}
           alt={course.name}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-        />
+        /> </Link>
         <div className="absolute top-4 right-4">
           <div className="bg-white/95 backdrop-blur-sm rounded-full px-3 py-1 flex items-center gap-1 shadow-sm">
             <Star className="w-4 h-4 fill-blue-400 text-blue-400" />
@@ -167,7 +169,7 @@ const AllCourses = () => {
       {/* Hero Section */}
       <div
         className="relative bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
+        style={{ backgroundImage: "url('/images/spark-images/course-hero.avif')" }}
       >
         {/* Optional dark overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
@@ -187,12 +189,6 @@ const AllCourses = () => {
           <p className="text-white text-lg max-w-3xl mx-auto leading-relaxed mb-10">
             Join thousands of professionals learning cutting-edge skills with our premium courses.
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
-              Browse Courses
-            </button>
-          </div>
         </div>
       </div>
 

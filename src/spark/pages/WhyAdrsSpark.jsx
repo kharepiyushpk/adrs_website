@@ -20,7 +20,7 @@ const WhyADRSSpark = () => {
     {
       icon: <HiOutlineAcademicCap className="w-8 h-8" />,
       title: "Expert-Led Curriculum",
-      description: "Learn from industry veterans with 15+ years of real-world experience in digital marketing and business strategy.",
+      description: "Learn from industry veterans with 1+ years of real-world experience in digital marketing and business strategy.",
       color: "blue"
     },
     {
@@ -32,7 +32,7 @@ const WhyADRSSpark = () => {
     {
       icon: <HiOutlineUsers className="w-8 h-8" />,
       title: "Community Network",
-      description: "Join a thriving community of 10,000+ professionals across various industries and career levels.",
+      description: "Join a thriving community of 100+ professionals across various industries and career levels.",
       color: "purple"
     },
     {
@@ -56,10 +56,10 @@ const WhyADRSSpark = () => {
   ];
 
   const stats = [
-    { number: "50,000+", label: "Students Enrolled", icon: <HiOutlineUsers /> },
-    { number: "95%", label: "Success Rate", icon: <HiOutlineTrendingUp /> },
-    { number: "200+", label: "Expert Instructors", icon: <HiOutlineAcademicCap /> },
-    { number: "4.9/5", label: "Average Rating", icon: <FiStar /> }
+    { number: "50+", label: "Students Enrolled", icon: <HiOutlineUsers /> },
+    { number: "100%", label: "Success Rate", icon: <HiOutlineTrendingUp /> },
+    { number: "10+", label: "Expert Instructors", icon: <HiOutlineAcademicCap /> },
+    { number: "4.5/5", label: "Average Rating", icon: <FiStar /> }
   ];
 
   const testimonials = [
@@ -175,7 +175,7 @@ const WhyADRSSpark = () => {
               </span>
               
               <h2 className="text-4xl font-bold text-slate-900 mb-8">
-                Why 50,000+ Professionals Choose ADRS Spark
+                Why 50+ Professionals Choose ADRS Spark
               </h2>
               
               <div className="space-y-4 mb-8">
@@ -200,7 +200,7 @@ const WhyADRSSpark = () => {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-6 bg-white/80 rounded-2xl shadow-sm">
                     <HiOutlineBookOpen className="w-12 h-12 text-green-600 mb-4 mx-auto" />
-                    <div className="text-2xl font-bold text-slate-900">300+</div>
+                    <div className="text-2xl font-bold text-slate-900">25+</div>
                     <div className="text-sm text-slate-600">Courses Available</div>
                   </div>
                   <div className="text-center p-6 bg-white/80 rounded-2xl shadow-sm">
