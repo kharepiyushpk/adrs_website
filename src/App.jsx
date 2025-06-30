@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom'
-import "aos/dist/aos.css";
 import Home from './pages/Home'
 import Services from './pages/Services'
 import OurTeam from './pages/OurTeam'
