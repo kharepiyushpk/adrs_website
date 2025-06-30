@@ -35,7 +35,7 @@ const Internship = () => {
   ];
 
   return (
-    <div className="py-16 bg-[#203b45]">
+    <div className="py-16 bg-[#000]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-white mb-12">ADRS SPARK INTERNSHIP PROGRAM</h2>
         
@@ -44,7 +44,7 @@ const Internship = () => {
             <Link 
               key={internship.id} 
               to="/spark/registration"
-              className="bg-[#243642] border border-white rounded-lg p-4 flex flex-col items-center hover:transform hover:-translate-y-2 transition-transform duration-300"
+              className="bg-[#e6f0bb] border border-white rounded-lg p-4 flex flex-col items-center hover:transform hover:-translate-y-2 transition-transform duration-300"
             >
               <div className="w-full h-32 mb-4">
                 <img 
@@ -53,7 +53,7 @@ const Internship = () => {
                   className="w-full h-full object-contain filter grayscale sepia hue-rotate-180"
                 />
               </div>
-              <h3 className="text-white text-center">{internship.title}</h3>
+              <h3 className="text-black text-center">{internship.title}</h3>
             </Link>
           ))}
         </div>

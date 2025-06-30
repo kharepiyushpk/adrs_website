@@ -4,7 +4,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaLinkedin,
-  FaTwitter,
+  FaGithub,
   FaFacebook,
   FaInstagram,
 } from 'react-icons/fa';
@@ -111,9 +111,9 @@ const [errors, setErrors] = useState({});
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-black">
       {/* Hero Section */}
-      <div className="bg-[#203b45] text-white py-12 px-4">
+      <div className="bg-[#e6f0bb] text-black py-12 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Contact ADRS Solutions</h1>
           <p className="text-xl max-w-2xl mx-auto">
@@ -127,72 +127,72 @@ const [errors, setErrors] = useState({});
         {/* Company Information */}
         <div>
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">About ADRS</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4">About ADRS</h2>
+            <p className="text-white mb-4">
               ADRS Solutions is a leading technology partner helping businesses transform through digital innovation. With offices in India and the US, we serve clients across multiple industries.
             </p>
-            <p className="text-gray-600">
+            <p className="text-white">
               Our expertise includes enterprise software development, cloud solutions, and digital transformation services.
             </p>
           </div>
 
           <div className="space-y-6">
             <div className="flex items-start">
-              <div className="text-blue-700 mt-1 mr-4">
+              <div className="text-white mt-1 mr-4">
                 <FaMapMarkerAlt className="text-xl" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg">ADRS Technosoft</h3>
-                <p className="text-gray-600">71, Dadda Nagar, Jabalpur</p>
-                <p className="text-gray-600">Madhya Pradesh 482002</p>
-                <p className="text-gray-600">India</p>
+                <p className="text-white">71, Dadda Nagar, Jabalpur</p>
+                <p className="text-white">Madhya Pradesh 482002</p>
+                <p className="text-white">India</p>
               </div>
             </div>
 
             <div className="flex items-start">
-              <div className="text-blue-700 mt-1 mr-4">
+              <div className="text-white mt-1 mr-4">
                 <FaPhone className="text-xl" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Phone</h3>
-                <p className="text-gray-600">+91 9201347033</p>
-                <p className="text-gray-600">(Monday to Friday, 9am to 6pm IST)</p>
+                <p className="text-white">+91 9201347033</p>
+                <p className="text-white">(Monday to Friday, 9am to 6pm IST)</p>
               </div>
             </div>
 
             <div className="flex items-start">
-              <div className="text-blue-700 mt-1 mr-4">
+              <div className="text-white mt-1 mr-4">
                 <FaEnvelope className="text-xl" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
-                <p className="text-gray-600">support@adrstechno.com</p>
-                <p className="text-gray-600">adrstechnosoft@gmail.com</p>
+                <p className="text-white">support@adrstechno.com</p>
+                <p className="text-white">adrstechnosoft@gmail.com</p>
               </div>
             </div>
 
             <div className="pt-4">
               <h3 className="font-semibold text-lg mb-3">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-blue-700 hover:text-blue-900"><FaLinkedin className="text-2xl" /></a>
-                <a href="#" className="text-blue-700 hover:text-blue-900"><FaTwitter className="text-2xl" /></a>
-                <a href="#" className="text-blue-700 hover:text-blue-900"><FaFacebook className="text-2xl" /></a>
-                <a href="#" className="text-blue-700 hover:text-blue-900"><FaInstagram className="text-2xl" /></a>
+                <a href="https://www.linkedin.com/company/adrs-technology/" className="text-white hover:text-blue-900"><FaLinkedin className="text-2xl" /></a>
+                <a href="https://github.com/adrstechno" className="text-white hover:text-blue-900"><FaGithub className="text-2xl" /></a>
+                <a href="https://www.instagram.com/adrstechno?igsh=MWhjOGdvdXpzOXBwYg==" className="text-white hover:text-blue-900"><FaFacebook className="text-2xl" /></a>
+                <a href="https://www.instagram.com/adrstechno?igsh=MWhjOGdvdXpzOXBwYg==" className="text-white hover:text-blue-900"><FaInstagram className="text-2xl" /></a>
               </div>
             </div>
           </div>
         </div>
 
         {/* Contact Form */}
-        <div className="bg-white rounded-lg shadow-md p-8">
+        <div className="bg-[#e6f0bb] rounded-lg shadow-md p-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label className="block text-gray-700 font-medium mb-2">Name *</label>
+              <label className="block text-black font-medium mb-2">Name *</label>
               <input
                 type="text"
                 name="name"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 required
                 value={formData.name}
                 onChange={handleChange}
@@ -200,11 +200,11 @@ const [errors, setErrors] = useState({});
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-2">Email *</label>
+              <label className="block text-black font-medium mb-2">Email *</label>
               <input
                 type="email"
                 name="email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 required
                 value={formData.email}
                 onChange={handleChange}
@@ -212,22 +212,22 @@ const [errors, setErrors] = useState({});
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-2">Phone</label>
+              <label className="block text-black font-medium mb-2">Phone</label>
               <input
                 type="tel"
                 name="phone"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 value={formData.phone}
                 onChange={handleChange}
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium mb-2">Message *</label>
+              <label className="block text-black font-medium mb-2">Message *</label>
               <textarea
                 name="message"
                 rows="4"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 required
                 value={formData.message}
                 onChange={handleChange}
@@ -251,7 +251,7 @@ const [errors, setErrors] = useState({});
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 ${isSbmitting }"
+              className="w-full bg-black hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 ${isSbmitting }"
             >
               {isSubmitting ? 'Sending...' : 'Submit'}
             </button>

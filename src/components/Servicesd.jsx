@@ -145,7 +145,7 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-[#203b45] min-h-screen py-10 px-4">
+    <div className="bg-[#000] min-h-screen py-10 px-4">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-2 text-white">Our Services</h1>
       </div>
@@ -154,7 +154,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div 
             key={index} 
-            className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden cursor-pointer transform hover:-translate-y-1"
+            className="bg-[#e6f0bb] rounded-2xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden cursor-pointer transform hover:-translate-y-1"
             onClick={() => handleServiceClick(service)}
           >
             <img
@@ -163,10 +163,10 @@ const Services = () => {
               className="w-full h-56 object-cover"
             />
             <div className="p-5 text-center">
-              <h3 className="text-lg font-semibold text-blue-600">
+              <h3 className="text-lg font-semibold text-black">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mt-2 text-sm">{service.description}</p>
+              <p className="text-black mt-2 text-sm">{service.description}</p>
             </div>
           </div>
         ))}

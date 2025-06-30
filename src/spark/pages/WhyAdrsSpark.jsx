@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   HiOutlineLightBulb, 
   HiOutlineAcademicCap, 
@@ -188,11 +189,11 @@ const WhyADRSSpark = () => {
                   </div>
                 ))}
               </div>
-              
+              <Link to="/spark/registration">
               <button className="bg-green-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-700 transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl group">
                 Start Your Journey
                 <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </button> </Link>
             </div>
             
             <div className="relative">
@@ -274,12 +275,14 @@ const WhyADRSSpark = () => {
             <span className="text-indigo-700 font-semibold">ADRS Spark</span>. Your success story starts here.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/spark/allcourses">
             <button className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-xl">
               Explore Courses
-            </button>
+            </button> </Link>
+            <Link to="/contact">
             <button className="border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-all duration-300">
               Book Free Consultation
-            </button>
+            </button> </Link>
           </div>
         </div>
       </section>

@@ -5,7 +5,7 @@ import Servicesd from '../components/Servicesd';
 
 const Home = () => {
   return (
-    <div className="bg-[#203b45] text-white">
+    <div className="bg-[#000] text-white">
       <Carousel />
       
        <div className="container mx-auto px-4 py-12">

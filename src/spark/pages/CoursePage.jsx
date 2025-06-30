@@ -294,10 +294,6 @@ const CoursePage = () => {
                 <div className="text-3xl font-bold text-gray-900 mb-2">
                   {course.price}
                 </div>
-                <div className="text-gray-500 line-through mb-2">₹3,999</div>
-                <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                  Save 50%
-                </div>
               </div>
 
               <Link to="/spark/registration">

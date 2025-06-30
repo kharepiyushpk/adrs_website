@@ -28,8 +28,8 @@ export const coursesFlat = [
       "Deployment with GitHub & Vercel/Heroku"
     ],
     rating: 4.8,
-    students: 1250,
-    price: "4999",
+    students: 50,
+    price: "₹1499",
     videoUrl: "/images/spark-images/course-videos/fullstack-video.mp4"
   },
   {
@@ -56,8 +56,8 @@ export const coursesFlat = [
       "Closures, Promises, Async/Await",
       "Local Storage & JSON"
     ], rating: 4.8,
-    students: 1250,
-    price: "2999",
+    students: 50,
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/javascript-video.mp4"
   },
   {
@@ -84,7 +84,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "599",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/html-video.mp4"
   },
 
@@ -114,7 +114,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/react-video.mp4"
   },
 
@@ -144,7 +144,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹699",
     videoUrl: "/images/spark-images/course-videos/angular-video.mp4"
   },
 
@@ -176,7 +176,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "1999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/java-video.mp4"
   },
 
@@ -206,7 +206,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "1999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/video-cpp.mp4"
   },
 
@@ -236,7 +236,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "1999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/javascript-video.mp4"
   },
 
@@ -266,7 +266,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "1999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/python-video.mp4"
   },
 
@@ -294,7 +294,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/sql-video.mp4"
   },
 
@@ -323,7 +323,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/mysql-video.mp4"
   },
 
@@ -351,7 +351,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "111999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/mongo-video.mp4"
   },
 
@@ -379,7 +379,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/postgre-video.mp4"
   },
 
@@ -407,7 +407,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/oracle-video.mp4"
   },
 
@@ -435,7 +435,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹599",
     videoUrl: "/images/spark-images/course-videos/plsql-video.mp4"
   },
 
@@ -464,7 +464,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/native-video.mp4"
   },
 
@@ -492,7 +492,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹999",
     videoUrl: "/images/spark-images/course-videos/flutter-video.mp4"
   },
 
@@ -520,7 +520,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/android-kotlin-video.mp4"
   },
 
@@ -548,7 +548,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "1999",
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/android-java-video.mp4"
   },
 
@@ -576,7 +576,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/ios-video.mp4"
   },
 
@@ -606,8 +606,8 @@ export const coursesFlat = [
       "Selenium Grid & Automation Projects",
     ],
     rating: 4.8,
-    students: 1250,
-    price: "999",
+    students: 50,
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/selenium-video.mp4"
   },
 
@@ -634,8 +634,8 @@ export const coursesFlat = [
       "Reports & Logs",
     ],
     rating: 4.8,
-    students: 1250,
-    price: "999",
+    students: 50,
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/automation-video.mp4"
   },
 
@@ -662,9 +662,9 @@ export const coursesFlat = [
       "Agile Testing",
     ],
     rating: 4.8,
-    students: 1250,
-    price: "999",
-    videoUrl: "/images/spark-images/course-videos/tesing-video.mp4"
+    students: 50,
+    price: "₹799",
+    videoUrl: "/images/spark-images/course-videos/testing-video.mp4"
   },
 
   {
@@ -690,8 +690,8 @@ export const coursesFlat = [
       "CI Integration",
     ],
     rating: 4.8,
-    students: 1250,
-    price: "999",
+    students: 50,
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/postman-video.mp4"
   },
 
@@ -720,8 +720,8 @@ export const coursesFlat = [
       "Infrastructure as Code (IaC)",
     ],
     rating: 4.8,
-    students: 1250,
-    price: "999",
+    students: 50,
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/devops-video.mp4"
   },
 
@@ -749,7 +749,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/docker-video.mp4",
   },
 
@@ -776,7 +776,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/fundamentals-video.mp4"
   },
 
@@ -804,7 +804,7 @@ export const coursesFlat = [
     ],
     rating: 4.8,
     students: 1250,
-    price: "999",
+    price: "₹799",
     videoUrl: "/images/spark-images/course-videos/kubernetes-video.mp4"
   },
 

@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Search, Filter, Clock, Users, Award, Star, ChevronDown, X, BookOpen, Share2 } from 'lucide-react';
+import { Filter, Clock, Users, Award, Star, ChevronDown, X, BookOpen, Share2 } from 'lucide-react';
 import { coursesFlat } from '../data/CoursesFlat';
 import { Link } from 'react-router-dom';
 
@@ -89,7 +89,7 @@ const AllCourses = () => {
           </span>
 
           <span className="text-xl font-bold text-blue-600">
-            {formatINR(course.price)}
+            {(course.price)}
 
           </span>
 
@@ -149,6 +149,7 @@ const AllCourses = () => {
     </div>
 
   );
+  
 
   const StatsCard = ({ icon: Icon, title, value }) => (
     <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
@@ -198,7 +199,7 @@ const AllCourses = () => {
         {/* Search and Filters */}
         <div className="mb-12">
           <div className="relative max-w-2xl mx-auto mb-8">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+            {/* <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" /> */}
             <input
               type="text"
               placeholder="Search courses..."

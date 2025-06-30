@@ -3,7 +3,7 @@ const teamData = {
     {
       name: "Abhishek Dubey",
       role: "Founder",
-      image: "./images/team/Abhishek.jpeg"
+      image: "./images/team/abhi4.jpeg"
     },
     {
       name: "Ritesh Saket",
@@ -37,13 +37,13 @@ const teamData = {
 
 const OurTeam = () => {
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="bg-black text-white">
       {/* Hero Section */}
       <div
         className="w-full h-96 bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: "url('/images/team/hero-team.avif')" }}
       >
-        <div className="bg-black bg-opacity-60 p-8 rounded-lg text-center">
+        <div className="bg-opacity-60 p-8 rounded-lg text-center">
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Meet Our Dynamic Team</h1>
           <p className="text-white text-lg md:text-xl max-w-2xl mx-auto">
             From visionaries to builders — the force behind ADRS Technosoft&apos;s innovation and excellence.
@@ -53,12 +53,12 @@ const OurTeam = () => {
 
       {/* Founders Section */}
       <section className="py-16 px-4 text-center">
-        <h2 className="text-3xl font-bold text-blue-800 mb-10 underline">Founding Visionaries</h2>
+        <h2 className="text-3xl font-bold text-white mb-10 underline">Founding Visionaries</h2>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {teamData.founders.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-cover hover:shadow-xl transition-transform transform hover:-translate-y-1 p-4"
+              className="bg-[#e6f0bb] rounded-2xl shadow-lg overflow-cover hover:shadow-xl transition-transform transform hover:-translate-y-1 p-4"
             >
               <img
                 src={member.image}
@@ -73,13 +73,13 @@ const OurTeam = () => {
       </section>
 
       {/* Technical Team Section */}
-      <section className="py-16 px-4 bg-gray-100 text-center">
-        <h2 className="text-3xl font-bold text-blue-800 mb-10 underline">Technical Wizards</h2>
+      <section className="py-16 px-4 bg-black text-center">
+        <h2 className="text-3xl font-bold text-white mb-10 underline">Technical Wizards</h2>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {teamData.technical.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-transform transform hover:-translate-y-1 p-4"
+              className="bg-[#e6f0bb] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-transform transform hover:-translate-y-1 p-4"
             >
               <img
                 src={member.image}

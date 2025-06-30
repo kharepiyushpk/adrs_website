@@ -10,20 +10,20 @@ const Features = () => {
     navigate('/spark/registration');
   };
   return (
-    <div className="bg-gradient-to-br py-12 px-4 sm:px-6 lg:px-8 breadth">
+    <div className="bg-[#000] py-12 px-4 sm:px-6 lg:px-8 breadth">
       <div className="max-w-screen-x1 mx-auto w-full">
         <div className="text-center mb-12">
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             What We Provide
           </h3>
-          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+          <p className="text-lg text-white max-w-2xl mx-auto">
             Premium solutions tailored to your business and learning needs
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 w-full">
           {/* Software Development Card */}
-          <div className="bg-gradient-to-br from-white to-slate-100 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl breadth">
+          <div className="bg-[#e6f0bb] rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl breadth">
             <div className="p-5 sm:p-6 md:p-8 ">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 ">
                 <div className="flex items-start gap-4">
@@ -73,7 +73,7 @@ const Features = () => {
           </div>
 
           {/* Training Program Card */}
-          <div className="bg-gradient-to-br from-white to-slate-100 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+          <div className="bg-[#e6f0bb] rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
             <div className="p-5 sm:p-6 md:p-8">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                 <div className="flex items-start gap-4">

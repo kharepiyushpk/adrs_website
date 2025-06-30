@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const products = [
   {
     id: 1,
-    title: 'ADRS LearnPro LMS',
+    title: 'ADRS SPARK LMS',
     description: 'Our Learning Management System Software is designed to simplify the teaching and learning process through an intuitive, feature-rich platform that supports both traditional and modern e-learning methodologies.',
     detailedDescription: 'ADRS LearnPro LMS offers a comprehensive suite of tools for course creation, student management, and progress tracking. With features like interactive quizzes, video conferencing integration, and mobile accessibility, it revolutionizes the learning experience for both educators and students.',
     features: [
@@ -14,12 +14,11 @@ const products = [
       'Mobile learning app',
       'Secure payment integration'
     ],
-    image: 'https://img.freepik.com/free-vector/smart-agriculture-isometric-background_1284-30161.jpg',
-    videoUrl: 'https://www.youtube.com/embed/jfKfPfyJRdk',
+    image: 'https://img.freepik.com/free-vector/smart-agriculture-isometric-background_1284-30161.jpg'
   },
   {
     id: 2,
-    title: 'ADRS GemPro',
+    title: 'ADRS Gem Control',
     description: 'At ADRS Technosoft, we have developed a comprehensive Jewelry Shop Management System, tailored to meet the operational and inventory needs of jewelry businesses.',
     detailedDescription: 'ADRS GemPro streamlines jewelry business operations with inventory management, customer relationship tools, and sales tracking. The system includes barcode scanning, gemstone certification tracking, and multi-location support for growing businesses.',
     features: [
@@ -30,7 +29,6 @@ const products = [
       'Multi-branch support'
     ],
     image: 'https://img.freepik.com/free-vector/drone-agriculture-concept-illustration_114360-9331.jpg',
-    videoUrl: 'https://www.youtube.com/embed/mU6anWqZJcc',
   }
 ];
 
@@ -45,14 +43,14 @@ const Product = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-4">
+    <div className="min-h-screen bg-[#000] py-10 px-4">
       <h2 className="text-3xl font-bold text-center text-green-700 mb-10">Our Smart Products</h2>
 
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl"
+            className="bg-[#e6f0bb] rounded-2xl shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl"
           >
             <img
               src={product.image}

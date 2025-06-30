@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { FaRegBookmark, FaBookmark, FaShareAlt, FaRegComment, FaSearch, FaEnvelope } from 'react-icons/fa';
-import { FiClock, FiCalendar, FiUser, FiTag } from 'react-icons/fi';
+import { useState, useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaRegBookmark, FaBookmark, FaShareAlt, FaRegComment, FaSearch } from 'react-icons/fa';
+import { FiClock, FiCalendar} from 'react-icons/fi';
 
 const Blog = () => {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
@@ -190,13 +188,6 @@ const Blog = () => {
 
     return result;
   }, [blogPosts, activeCategory, searchQuery, activeSort]);
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    setSubscribed(true);
-    setEmail('');
-    setTimeout(() => setSubscribed(false), 3000);
-  };
 
   const handlePostClick = (postId) => {
     navigate(`/blog/${postId}`);
@@ -511,48 +502,6 @@ const Blog = () => {
             </button>
           </div>
         )}
-
-        {/* Newsletter Subscription */}
-        <div className="mt-16 rounded-2xl p-8 text-center bg-white shadow-xl">
-          <div className="max-w-2xl mx-auto">
-            <FaEnvelope className="mx-auto h-12 w-12 text-blue-500 mb-4" />
-            <h3 className="text-2xl font-bold mb-2 text-gray-900">Developer Newsletter</h3>
-            <p className="mb-6 text-gray-600">
-              Subscribe to get the latest articles and resources delivered to your inbox.
-            </p>
-            
-            {subscribed ? (
-              <div className="p-4 rounded-lg flex items-center justify-center bg-green-100 text-green-800">
-                <svg 
-                  className="h-5 w-5 mr-2" 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                Thank you for subscribing!
-              </div>
-            ) : (
-              <form onSubmit={handleSubscribe} className="max-w-md mx-auto flex">
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="flex-grow px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-                <button
-                  type="submit"
-                  className="px-6 py-3 font-medium rounded-r-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-blue-600 hover:bg-blue-700 text-white"
-                >
-                  Subscribe
-                </button>
-              </form>
-            )}
-          </div>
-        </div>
 
         {/* Popular Tags */}
         <div className="mt-16">

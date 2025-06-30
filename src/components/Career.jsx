@@ -21,7 +21,7 @@ const roles = [
 
 const Career = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-blue-100">
+    <div className="min-h-screen bg-black text-white">
       {/* Hero Section with Background Image */}
       <div
         className="bg-cover bg-center text-white py-32 px-6 text-center relative bg-[url('/images/cara101.avif')]"
@@ -39,31 +39,31 @@ const Career = () => {
 
       {/* Why Join Us Section */}
       <section className="py-16 px-4 md:px-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10">Why Join Us?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">Why Join Us?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-gray-700 text-lg">
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+          <div className="bg-[#e6f0bb] p-6 rounded-xl shadow hover:shadow-md transition">
             🌟 A creative and inclusive work environment
           </div>
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+          <div className="bg-[#e6f0bb] p-6 rounded-xl shadow hover:shadow-md transition">
             🧠 Opportunities to grow & lead real projects
           </div>
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+          <div className="bg-[#e6f0bb] p-6 rounded-xl shadow hover:shadow-md transition">
             🎯 Flexible work hours & hybrid model
           </div>
-          <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+          <div className="bg-[#e6f0bb] p-6 rounded-xl shadow hover:shadow-md transition">
             🏆 Recognition, rewards, and mentorship
           </div>
         </div>
       </section>
 
       {/* Open Roles Section */}
-      <section className="py-16 px-4 md:px-20 bg-gradient-to-r from-white to-sky-50">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">Current Openings</h2>
+      <section className="py-16 px-4 md:px-20 bg-black">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">Current Openings</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
           {roles.map((role, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl shadow-lg w-full max-w-sm hover:shadow-xl transition-transform transform hover:-translate-y-1"
+              className="bg-[#e6f0bb] p-6 rounded-2xl shadow-lg w-full max-w-sm hover:shadow-xl transition-transform transform hover:-translate-y-1"
             >
               <h3 className="text-xl font-bold text-blue-700 mb-3">{role.title}</h3>
               <p className="text-gray-600 mb-6">{role.description}</p>
