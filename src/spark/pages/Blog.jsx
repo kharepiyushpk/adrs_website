@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaRegBookmark, FaBookmark, FaShareAlt, FaRegComment, FaSearch } from 'react-icons/fa';
@@ -189,8 +190,8 @@ const Blog = () => {
     return result;
   }, [blogPosts, activeCategory, searchQuery, activeSort]);
 
-  const handlePostClick = (postId) => {
-    navigate(`/blog/${postId}`);
+  const handlePostClick = () => {
+    navigate(`/spark/blog`);
   };
 
   const toggleBookmark = (postId, e) => {
@@ -300,7 +301,7 @@ const Blog = () => {
             <h2 className="text-2xl font-semibold text-gray-800 mb-6">Featured Post</h2>
             <div 
               className="rounded-2xl overflow-hidden cursor-pointer transition-shadow hover:shadow-2xl bg-white shadow-xl"
-              onClick={() => handlePostClick(filteredPosts[0].id)}
+              onClick={() => handlePostClick()}
             >
               <div className="md:flex">
                 <div className="md:flex-shrink-0 md:w-1/2">
@@ -404,7 +405,7 @@ const Blog = () => {
                 <div 
                   key={post.id} 
                   className="rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer bg-white shadow-md"
-                  onClick={() => handlePostClick(post.id)}
+                  onClick={() => handlePostClick()}
                 >
                   <div className="h-48 overflow-hidden relative">
                     <img 

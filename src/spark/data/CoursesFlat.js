@@ -237,7 +237,7 @@ export const coursesFlat = [
     rating: 4.8,
     students: 1250,
     price: "₹599",
-    videoUrl: "/images/spark-images/course-videos/javascript-video.mp4"
+    videoUrl: "/images/spark-images/course-videos/javascript2-video.mp4"
   },
 
   {
@@ -465,7 +465,7 @@ export const coursesFlat = [
     rating: 4.8,
     students: 1250,
     price: "₹799",
-    videoUrl: "/images/spark-images/course-videos/native-video.mp4"
+    videoUrl: "/images/spark-images/course-videos/react-native-video.mp4"
   },
 
   {
