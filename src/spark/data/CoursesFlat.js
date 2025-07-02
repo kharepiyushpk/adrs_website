@@ -521,7 +521,7 @@ export const coursesFlat = [
     rating: 4.8,
     students: 1250,
     price: "₹799",
-    videoUrl: "/images/spark-images/course-videos/android-kotlin-video.mp4"
+    videoUrl: "/images/spark-images/course-videos/kotlin-video.mp4"
   },
 
   {
