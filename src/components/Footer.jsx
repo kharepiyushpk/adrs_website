@@ -5,71 +5,95 @@ import {
   FaFacebook, 
 
 } from 'react-icons/fa';
+import {
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <footer className="bg-gray-900 text-white text-sm">
+      <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="col-span-2 md:col-span-1">
             <h5>
-              <span className="text-blue-400 text-2xl font-bold">ADRS</span><br />Advanced Digital & Reliable Solutions
+              <h3 className="text-white text-2xl font-bold mb-4">ADRS Technosoft</h3><br />Advanced Digital & Reliable Solutions
             </h5>
-            <p className="text-gray-400">
+            <p className="text-white mb-4 leading-relaxed text-[14px]">
               Innovating the future with cutting-edge technology solutions for your business.
             </p>
-             <div className="flex space-x-4 icon_width">
-              <a href="https://www.instagram.com/adrstechno?igsh=MWhjOGdvdXpzOXBwYg==" className="text-gray-400 hover:text-white transition" aria-label="Instagram">
-                <FaInstagram className="w-5 h-6" />
+             <div className="flex space-x-4">
+              <a href="https://www.instagram.com/adrstechno?igsh=MWhjOGdvdXpzOXBwYg==" className="text-blue-800 hover:text-white transition" aria-label="Instagram">
+                <FaInstagram className="h-5 w-5" />
               </a>
-              <a href="https://github.com/adrstechno" className="text-gray-400 hover:text-white transition" aria-label="GitHub">
-                <FaGithub className="w-5 h-6" />
+              <a href="https://github.com/adrstechno" className="text-blue-800 hover:text-white transition" aria-label="GitHub">
+                <FaGithub className="h-5 w-5" />
               </a>
-              <a href="https://www.linkedin.com/company/adrs-technology/" className="text-gray-400 hover:text-white transition" aria-label="LinkedIn">
-                <FaLinkedin className="w-5 h-6" />
+              <a href="https://www.linkedin.com/company/adrs-technology/" className="text-blue-800 hover:text-white transition" aria-label="LinkedIn">
+                <FaLinkedin className="h-5 w-5" />
               </a>
-              <a href="https://www.instagram.com/adrstechno?igsh=MWhjOGdvdXpzOXBwYg==" className="text-gray-400 hover:text-white transition" aria-label="Facebook">
-                <FaFacebook className="w-5 h-6" />
+              <a href="https://www.instagram.com/adrstechno?igsh=MWhjOGdvdXpzOXBwYg==" className="text-blue-800 hover:text-white transition" aria-label="Facebook">
+                <FaFacebook className="h-5 w-5" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Quick Links</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="/" className="hover:text-white transition">Home</a></li>
-              <li><a href="/services" className="hover:text-white transition">Services</a></li>
-              <li><a href="/product" className="hover:text-white transition">Products</a></li>
-              <li><a href="/career" className="hover:text-white transition">Career</a></li>
-              <li><a href="/contact" className="hover:text-white transition">Contact</a></li>
+          <div>
+            <h4 className="text-lg font-semibold mb-4 inline-block text-white border-b border-[#fff]">Quick Links</h4>
+            <ul className="space-y-3 mt-3 text-gray-400">
+              <li><a href="/" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Home</a></li>
+              <li><a href="/services" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Services</a></li>
+              <li><a href="/product" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Products</a></li>
+              <li><a href="/career" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Career</a></li>
+              <li><a href="/contact" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Contact</a></li>
             </ul>
           </div>
 
           {/* Services */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Services</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="/services" className="hover:text-white transition">Web Development</a></li>
-              <li><a href="/services" className="hover:text-white transition">Mobile App Development</a></li>
-              <li><a href="/services" className="hover:text-white transition">Software Development</a></li>
-              <li><a href="/services" className="hover:text-white transition">Digital Marketing</a></li>
-              <li><a href="/services" className="hover:text-white transition">Graphic Designing</a></li>
+          <div>
+            <h4 className="text-lg font-semibold text-white mb-4 inline-block border-b border-[#fff]">Services</h4>
+            <ul className="space-y-3 mt-3 text-gray-400">
+              <li><a href="/services" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Web Development</a></li>
+              <li><a href="/services" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Mobile App Development</a></li>
+              <li><a href="/services" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Software Development</a></li>
+              <li><a href="/services" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Digital Marketing</a></li>
+              <li><a href="/services" className="hover:text-[#B2CD9C] text-[#fff] hover:pl-1 transition-all duration-200">Graphic Designing</a></li>
               
              
             </ul>
           </div>
 
           {/* Contact */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Contact Us</h4>
-            <address className="not-italic text-gray-400 space-y-2">
-              <p> ADRS Technosoft Office , 71,Dadda Nagar ,Jabalpur, India </p>
-              <p>Jabalpur, MP 482002</p>
-              <p>Email: support@adrstechno.com</p>
-              <p>Phone: (+91) 9201347033</p>
-            </address>
-          </div>
+          <div className="col-span-2 md:col-span-1">
+                        <h4 className="text-lg font-semibold text-white mb-4 border-b border-[#fff] inline-block">
+                          Contact Us
+                        </h4>
+                        <ul className="space-y-4 mt-3 text-[14px]">
+                          <li className="flex items-start">
+                            <MapPin className="h-5 w-5 mr-2 mt-1 hover:text-[#B2CD9C]" />
+                            <span>
+                              71, Dadda Nagar, Near Katangi Bypass, Jabalpur, <br />
+                              Madhya Pradesh
+                            </span>
+                          </li>
+                          <li className="flex items-center">
+                            <Phone className="h-5 w-5 mr-2 hover:text-[#B2CD9C]" />
+                            <span className="hover:text-[#B2CD9C]">9201347033</span>
+                          </li>
+                          <li className="flex items-center">
+                            <Mail className="h-5 w-5 mr-2 hover:text-[#B2CD9C]" />
+                            <a
+                              href="mailto:support@adrstechno.com"
+                              className="hover:text-[#B2CD9C]"
+                            >
+                              support@adrstechno.com
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
