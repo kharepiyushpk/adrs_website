@@ -10,7 +10,6 @@ import {
 import {
   HiOutlineLightBulb,
   HiOutlineBookOpen,
-  HiOutlineUsers,
   HiOutlineNewspaper,
   HiOutlineMenuAlt3,
 } from "react-icons/hi";
@@ -53,12 +52,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 left-0 right-0 z-50 bg-white shadow-sm px-4 sm:px-8 py-1 flex items-center justify-between border-b border-gray-100">
+    <nav className="sticky top-0 left-0 right-0 z-100 bg-white shadow-sm px-4 sm:px-8 py-1 flex items-center justify-between border-b border-gray-100">
 
       {/* Logo */}
       <Link to="/spark" className="inline-block">
         <img
-          src="/images/spark-images/spark-logo.png"
+          src="/images/spark-images/logo5.png"
           alt="ADRS Spark Logo"
           className="h-auto w-24 object-contain transition-transform duration-300 hover:scale-105"
         />
